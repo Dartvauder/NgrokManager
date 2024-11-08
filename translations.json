@@ -1,0 +1,32 @@
+{
+  "en": {
+    "port": "Port",
+    "create_tunnel": "Create Tunnel",
+    "delete_selected_tunnel": "Delete Selected Tunnel",
+    "success": "Success",
+    "error": "Error",
+    "invalid_port": "Invalid port",
+    "tunnel_created": "Tunnel created at ",
+    "tunnel_closed": "Tunnel closed"
+  },
+  "ru": {
+    "port": "Порт",
+    "create_tunnel": "Создать туннель",
+    "delete_selected_tunnel": "Удалить выбранный туннель",
+    "success": "Успех",
+    "error": "Ошибка",
+    "invalid_port": "Неверный порт",
+    "tunnel_created": "Туннель создан по адресу ",
+    "tunnel_closed": "Туннель закрыт"
+  },
+  "zh": {
+    "port": "端口",
+    "create_tunnel": "创建隧道",
+    "delete_selected_tunnel": "删除选定的隧道",
+    "success": "成功",
+    "error": "错误",
+    "invalid_port": "无效的端口",
+    "tunnel_created": "隧道已创建：",
+    "tunnel_closed": "隧道已关闭"
+  }
+}
