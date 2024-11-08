@@ -1,24 +1,30 @@
-from pyngrok import ngrok
+from pyngrok import ngrok, conf
 
 
 class NgrokManager:
     def __init__(self, token):
-        ngrok.set_auth_token(token)
+        conf.get_default().auth_token = token
 
-        self.tunnels = {}
+    def start_tunnel(self, port, proto="http", domain=None, auth=None):
+        options = {"proto": proto, "addr": port}
 
-    def start_tunnel(self, port, proto='http', domain=None):
         if domain:
-            tunnel = ngrok.connect(port, proto=proto, hostname=domain)
-        else:
-            tunnel = ngrok.connect(port, proto=proto)
-        tunnel_name = f"{port}"
-        self.tunnels[tunnel_name] = tunnel
+            options["hostname"] = domain
+
+        if auth:
+            options["auth"] = auth
+
+        tunnel = ngrok.connect(**options)
         return tunnel.public_url
 
-    def stop_tunnel(self, name):
-        if name in self.tunnels:
-            ngrok.disconnect(self.tunnels[name].public_url)
-            del self.tunnels[name]
-            return True
-        return False
+    def stop_tunnel(self, port):
+        for tunnel in ngrok.get_tunnels():
+            if str(port) in tunnel.config["addr"]:
+                ngrok.disconnect(tunnel.public_url)
+                break
+
+    def get_active_tunnels(self):
+        return ngrok.get_tunnels()
+
+    def __del__(self):
+        ngrok.kill()

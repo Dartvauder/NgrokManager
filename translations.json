@@ -1,32 +1,56 @@
 {
   "en": {
+    "ngrok_token": "ngrok Token",
     "port": "Port",
+    "protocol": "Protocol",
+    "domain_optional": "Domain (Optional)",
+    "language": "Language",
+    "theme": "Theme",
     "create_tunnel": "Create Tunnel",
     "delete_selected_tunnel": "Delete Selected Tunnel",
     "success": "Success",
+    "tunnel_created": "Tunnel created at: ",
     "error": "Error",
     "invalid_port": "Invalid port",
-    "tunnel_created": "Tunnel created at ",
-    "tunnel_closed": "Tunnel closed"
+    "tunnel_closed": "Tunnel closed",
+    "tunnel_not_found": "Tunnel not found",
+    "login_optional": "Login (Optional)",
+    "password_optional": "Password (Optional)"
   },
   "ru": {
+    "ngrok_token": "Токен ngrok",
     "port": "Порт",
+    "protocol": "Протокол",
+    "domain_optional": "Домен (необязательно)",
+    "language": "Язык",
+    "theme": "Тема",
     "create_tunnel": "Создать туннель",
     "delete_selected_tunnel": "Удалить выбранный туннель",
     "success": "Успех",
+    "tunnel_created": "Туннель создан по адресу: ",
     "error": "Ошибка",
     "invalid_port": "Неверный порт",
-    "tunnel_created": "Туннель создан по адресу ",
-    "tunnel_closed": "Туннель закрыт"
+    "tunnel_closed": "Туннель закрыт",
+    "tunnel_not_found": "Туннель не найден",
+    "login_optional": "Логин (необязательно)",
+    "password_optional": "Пароль (необязательно)"
   },
   "zh": {
+    "ngrok_token": "ngrok 令牌",
     "port": "端口",
+    "protocol": "协议",
+    "domain_optional": "域名（可选）",
+    "language": "语言",
+    "theme": "主题",
     "create_tunnel": "创建隧道",
     "delete_selected_tunnel": "删除选定的隧道",
     "success": "成功",
-    "error": "错误",
-    "invalid_port": "无效的端口",
     "tunnel_created": "隧道已创建：",
-    "tunnel_closed": "隧道已关闭"
+    "error": "错误",
+    "invalid_port": "无效端口",
+    "tunnel_closed": "隧道已关闭",
+    "tunnel_not_found": "未找到隧道",
+    "login_optional": "登录名（可选）",
+    "password_optional": "密码（可选）"
   }
 }
