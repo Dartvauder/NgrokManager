@@ -103,8 +103,8 @@ class NgrokApp:
                                        fg="#ffffff" if self.theme == "dark" else "#000000")
         self.delete_button.grid(row=10, column=0, columnspan=2, padx=5, pady=5)
 
-        def create_tunnel(self):
-            token = self.token_entry.get()
+    def create_tunnel(self):
+        token = self.token_entry.get()
 
         self.config.set('general', 'ngrok_token', token)
         with open('config.ini', 'w') as configfile:
