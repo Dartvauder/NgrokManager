@@ -1,14 +1,19 @@
+## [Features](/#Features) | [Dependencies](/#Required-Dependencies) | [SystemRequirements](/#Minimum-System-Requirements) | [Install](/#How-to-install) | [Using](/#How-to-use) | [Acknowledgment](/#Acknowledgment-to-developers) 
+
 # NgrokManager:
 
 <img width="236" alt="1" src="https://github.com/user-attachments/assets/bfb1a52d-16c4-4f51-9cf8-b468e615c25b">
 
 ## Description:
 
-A simple interface for using pyngrok
+A simple interface for easy using pyngrok tunnel port forwarding. Useful if you want to move your localhost to public
 
 ## Features:
 
 * Easy installation via install.bat (Windows) or install.sh (Linux & MacOS)
+* Available in three languages
+* Ngrok settings in Application
+* Theme changing
 
 ## Required Dependencies:
 
@@ -18,6 +23,10 @@ A simple interface for using pyngrok
 ## Minimum System Requirements:
 
 * System: Windows, Linux or MacOS
+* GPU: 512MB
+* CPU: No requirement
+* RAM: 64MB minimum, 128MB recommended
+* Disk space: 25MB
 * Internet
 
 ## How to install:
@@ -44,11 +53,22 @@ A simple interface for using pyngrok
 
 * To get update, run `./Update.sh`
 
+## How to use:
+
+1) Register using this site [Ngrok](https://ngrok.com)
+2) Go to your [dashboard](https://dashboard.ngrok.com/get-started/your-authtoken) and copy your token
+3) Paste your token in `ngrok Token`
+4) Enter the port you need to tunnel and select your protocol
+5) Click `Create Tunnel` button and double-click on the link that appears below
+6) To delete a tunnel, select it below and click `Delete Selected Tunnel` button
+
+### Optional: You can create one free [domain](https://dashboard.ngrok.com/domains) for your tunnel and enter it. For greater security, you can enter your login and password to enter your tunnel. You can also choose one of three languages ​​and change the theme
+
 ## Acknowledgment to developers
 
 #### Many thanks to these projects because thanks to their applications/libraries, i was able to create my application:
 
-First of all, I want to thank the developers of [PyCharm](https://www.jetbrains.com/pycharm/) and [GitHub](https://desktop.github.com). With the help of their applications, i was able to create and share my code
+First of all, I want to thank the developers of [PyCharm](https://www.jetbrains.com/pycharm/), [GitHub](https://desktop.github.com) and [Ngrok](https://ngrok.com). With the help of their applications, i was able to create and share my code
 
 * `pyngrok` - https://github.com/alexdlaird/pyngrok
 * `pyyaml` - https://github.com/yaml/pyyaml/
