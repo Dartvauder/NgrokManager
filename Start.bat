@@ -4,4 +4,4 @@ call venv\Scripts\activate
 
 python main.py
 
-deactivate
+call venv\Scripts\deactivate.bat
