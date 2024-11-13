@@ -193,8 +193,3 @@ class NgrokApp:
         self.theme_label.config(text=self.t["theme"])
         self.create_button.config(text=self.t["create_tunnel"])
         self.delete_button.config(text=self.t["delete_selected_tunnel"])
-
-
-root = tk.Tk()
-app = NgrokApp(root)
-root.mainloop()
