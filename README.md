@@ -1,5 +1,7 @@
 ## [Features](/#Features) | [Dependencies](/#Required-Dependencies) | [SystemRequirements](/#Minimum-System-Requirements) | [Install](/#How-to-install) | [Using](/#How-to-use) | [Acknowledgment](/#Acknowledgment-to-developers) 
 
+<a href='https://github.com/MShawon/github-clone-count-badge'><img alt='GitHub Clones' src='https://img.shields.io/badge/dynamic/json?color=success&label=Clone&query=count&url=https://gist.githubusercontent.com/Dartvauder/0778af493539a4463a319d91704fb5d1/raw/clone.json&logo=github'></a>
+
 # NgrokManager:
 
 <img width="236" alt="1" src="https://github.com/user-attachments/assets/bfb1a52d-16c4-4f51-9cf8-b468e615c25b">
