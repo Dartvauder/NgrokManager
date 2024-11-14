@@ -6,7 +6,7 @@
 
 # NgrokManager:
 
-<img width="236" alt="1" src="https://github.com/user-attachments/assets/bfb1a52d-16c4-4f51-9cf8-b468e615c25b">
+<img width="237" alt="1" src="https://github.com/user-attachments/assets/5ba58123-53f8-4f7e-ac2f-2f225c3b5d44">
 
 ## Description:
 
