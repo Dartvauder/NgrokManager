@@ -65,8 +65,17 @@ A simple interface for easy using pyngrok tunnel port forwarding. Useful if you 
 4) Enter the port you need to tunnel and select your protocol
 5) Click `Create Tunnel` button and double-click on the link that appears below
 6) To delete a tunnel, select it below and click `Delete Selected Tunnel` button
+7) To check the status of your connections, click `Web Inspection Interface` button
 
-### Optional: You can create one free [domain](https://dashboard.ngrok.com/domains) for your tunnel and enter it. For greater security, you can enter your login and password to enter your tunnel. You can also choose one of three languages ​​and change the theme
+### Optional: You can create one free [domain](https://dashboard.ngrok.com/domains) for your tunnel and enter it. For greater security, you can enter your login and password (Not from Ngrok account) to enter your tunnel. You can also choose one of three languages ​​and change the theme and region. Also you can save/load your tunnel config file. 
+
+### If you want to use `SSH Tunnel`:
+
+1. Generate SSH key: `ssh-keygen -t rsa -b 4096 -C "your@email.com"`
+2. View your public key: `cat ~/.ssh/id_rsa.pub`
+3. Go to [this](https://dashboard.ngrok.com/ssh-keys) and Add New SSH Key
+4. Paste your public key and save
+5. Now you can use `Create SSH Tunnel` button
 
 ## Acknowledgment to developers
 
