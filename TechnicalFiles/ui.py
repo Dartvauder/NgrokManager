@@ -1,12 +1,12 @@
 import tkinter as tk
 from tkinter import messagebox, simpledialog, filedialog, ttk
-from TechicalFiles.ngrok_manager import NgrokManager
+from TechnicalFiles.ngrok_manager import NgrokManager
 import json
 import webbrowser
 from configparser import ConfigParser
 import subprocess
 
-with open("TechicalFiles/translations.json", "r", encoding="utf-8") as f:
+with open("TechnicalFiles/translations.json", "r", encoding="utf-8") as f:
     translations = json.load(f)
 
 manager = None
@@ -18,7 +18,7 @@ class NgrokApp:
         self.root.title("NgrokManager")
 
         self.config = ConfigParser()
-        self.config.read('TechicalFiles/config.ini')
+        self.config.read('TechnicalFiles/config.ini')
 
         self.language = self.config.get('general', 'language', fallback='en')
         self.theme = self.config.get('general', 'theme', fallback='dark')
@@ -141,7 +141,7 @@ class NgrokApp:
     def change_region(self, event=None):
         self.region = self.region_var.get()
         self.config.set('general', 'region', self.region)
-        with open('TechicalFiles/config.ini', 'w') as configfile:
+        with open('TechnicalFiles/config.ini', 'w') as configfile:
             self.config.write(configfile)
 
     def create_tunnel(self):
@@ -149,11 +149,11 @@ class NgrokApp:
         region = self.region_var.get()
 
         self.config.set('general', 'ngrok_token', token)
-        with open('TechicalFiles/config.ini', 'w') as configfile:
+        with open('TechnicalFiles/config.ini', 'w') as configfile:
             self.config.write(configfile)
 
         self.config.set('general', 'region', region)
-        with open('TechicalFiles/config.ini', 'w') as configfile:
+        with open('TechnicalFiles/config.ini', 'w') as configfile:
             self.config.write(configfile)
 
         global manager
@@ -214,7 +214,7 @@ class NgrokApp:
     def change_language(self, event=None):
         self.language = self.language_var.get()
         self.config.set('general', 'language', self.language)
-        with open('TechicalFiles/config.ini', 'w') as configfile:
+        with open('TechnicalFiles/config.ini', 'w') as configfile:
             self.config.write(configfile)
 
         self.t = translations.get(self.language, translations["en"])
@@ -223,7 +223,7 @@ class NgrokApp:
     def change_theme(self, event=None):
         self.theme = self.theme_var.get()
         self.config.set('general', 'theme', self.theme)
-        with open('TechicalFiles/config.ini', 'w') as configfile:
+        with open('TechnicalFiles/config.ini', 'w') as configfile:
             self.config.write(configfile)
 
         bg_color = "#2e2e2e" if self.theme == "dark" else "#ffffff"

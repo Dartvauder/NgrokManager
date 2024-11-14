@@ -1,9 +1,9 @@
 import tkinter as tk
 from configparser import ConfigParser
-from TechicalFiles.ui import NgrokApp
+from TechnicalFiles.ui import NgrokApp
 
 config = ConfigParser()
-config.read('TechicalFiles/config.ini')
+config.read('TechnicalFiles/config.ini')
 
 language = config.get('general', 'language', fallback='en')
 

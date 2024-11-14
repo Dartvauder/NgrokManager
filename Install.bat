@@ -5,7 +5,7 @@ python -m venv venv
 call venv\Scripts\activate
 python -m pip install --upgrade pip setuptools
 pip install wheel
-pip install -r TechicalFiles/requirements.txt
+pip install -r TechnicalFiles/requirements.txt
 timeout /t 2 /nobreak >nul
 cls
 
