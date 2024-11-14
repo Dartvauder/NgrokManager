@@ -9,7 +9,7 @@ python -m venv venv
 source venv/bin/activate
 python -m pip install --upgrade pip setuptools
 pip install wheel
-pip install -r requirements.txt
+pip install -r TechicalFiles/requirements.txt
 sleep 2
 clear
 
