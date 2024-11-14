@@ -2,8 +2,9 @@ from pyngrok import ngrok, conf
 
 
 class NgrokManager:
-    def __init__(self, token):
+    def __init__(self, token, region="eu"):
         conf.get_default().auth_token = token
+        conf.get_default().region = region
 
     def start_tunnel(self, port, proto="http", domain=None, auth=None):
         options = {"proto": proto, "addr": port}
